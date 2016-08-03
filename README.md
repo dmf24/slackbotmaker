@@ -1,12 +1,10 @@
 # slackbotmaker
 Trivial, barebones framework for slackbot rtm client in python.  WIP use at your own risk.  Uses `slackclient` library.
 
-It's one python file, `slackbotmaker.py` the rest are examples.
-
 ### To use:
 
 1.  Obtain a slack API token.  [This Tuturial is Helpful](https://www.fullstackpython.com/blog/build-first-slack-bot-python.html).  There's also the [slack docs on web authentication](https://api.slack.com/web#authentication)
-1.  install the `slackclient` python package (`pip install slackclient`)
+1.  install the `slackbotmaker` python package (`pip install https://rc.hms.harvard.edu/dmf24/slackbotmaker-0.0.1.tar.gz`)
 2.  create your bot with a python script that does the following:
   1.  import `rtm_runner` from `slackbotmaker`
   2.  Define your actions or import them.  [See below.](https://github.com/dmf24/slackbotmaker/blob/master/README.md#actions-files)
@@ -37,12 +35,6 @@ def obnoxious(slack_client, event):
     if channel is not None:
         slack_client.rtm_send_message(channel, choice(["Yes!", "hmm", "oic", "mos def", "oh :("]))
 
-```
-
-### Install
-
-```
-pip install https://rc.hms.harvard.edu/dmf24/slackbotmaker-0.0.1.tar.gz
 ```
 
 ### Running examples:
