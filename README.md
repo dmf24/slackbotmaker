@@ -1,5 +1,5 @@
-# slackbotmaker
-Trivial, barebones framework for slackbot rtm client in python.  WIP use at your own risk.  Uses `slackclient` library.  Define actions using decorators, which registers them for a runner that runs the rtm bot.
+# Slackbotmaker
+Trivial, barebones framework for slackbot rtm client in python.  WIP use at your own risk.  Uses `slackclient` library.  Define actions using decorators, which registers them for a runner that runs the rtm bot.  Warning: there is no exception handling yet.  The bot will terminate on any error.
 
 ### To use:
 
@@ -35,6 +35,28 @@ def obnoxious(slack_client, event):
     if channel is not None:
         slack_client.rtm_send_message(channel, choice(["Yes!", "hmm", "oic", "mos def", "oh :("]))
 
+```
+
+### Full Example
+
+```Python
+from slackbotmaker import action, rtm_runner
+import sys
+
+@action
+def obnoxious(slack_client, event):
+    from random import choice
+    if event.get('type', None) != 'message':
+        return None
+    channel=event.get('channel', None)
+    if channel is not None:
+        slack_client.rtm_send_message(channel, choice(["Yes!", "hmm", "oic", "mos def", "oh :("]))
+
+if __name__ == '__main__:
+    if len(sys.argv) < 2:
+        sys.stderr.write("Please specify a slack API bot token\n")
+    else:
+        rtm_runner(sys.argv[1])
 ```
 
 ### Running examples:
