@@ -1,5 +1,5 @@
 # slackbotmaker
-Trivial, barebones framework for slackbot rtm client. 
+Trivial, barebones framework for slackbot rtm client.  WIP use at your own risk
 
 It's one python file, `slackbotmaker.py` the rest are examples.
 
