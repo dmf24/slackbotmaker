@@ -1,11 +1,3 @@
-# slackbotmaker
-Trivial framework for slackbot rtm client
-
-Initial attempt at a barebones framework for creating an rtm slackbot.
-
-It's one python file, `slackbotmaker.py` the rest are examples.
-
-```Python
 from slackbotmaker import rtm_runner
 import sample_actions
 import duckduckgo_actions
@@ -25,4 +17,3 @@ else:
 
 if __name__ == "__main__":
     rtm_runner(token)
-```
