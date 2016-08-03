@@ -1,13 +1,31 @@
 # slackbotmaker
-Trivial framework for slackbot rtm client
-
-Initial attempt at a barebones framework for creating an rtm slackbot.
+Trivial, barebones framework for slackbot rtm client. 
 
 It's one python file, `slackbotmaker.py` the rest are examples.
 
-To use these examples you must have your slack API token.
+### To use:
 
-Then, you can run:
+1.  install the `slackclient` python package (`pip install slackclient`)
+1.  define bot behavior in python scripts (optional, see "Actions files" below).
+2.  create your bot with a python script that does the following:
+  1.  import `rtm_runner` from `slackbotmaker`
+  2.  Define your actions (or import them)
+  3.  load your slack token into memory (sample script shows 3 ways to do it.  If you just copy and paste the string into the script, don't tell anyone you did that)
+  4.  finish with a call to rtm_runner that passes your token as the sole argument.
+
+### Actions files
+
+To define actions, import the action function from slackbotmaker:
+
+```
+from slackbotmaker import action
+```
+
+Use it as a decorator for the action functions.  Action functions take two arguments, which are passed by rtm_runner.  The first argument is the instance of the slack client.  The second argument is a dictionary containing with the contents of the slack event.
+
+
+### Running examples:
+
 
 ```
 python samplebot.py <your slack API token>
