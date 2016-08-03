@@ -1,5 +1,5 @@
 # slackbotmaker
-Trivial, barebones framework for slackbot rtm client in python.  WIP use at your own risk.  Uses `slackclient` library.
+Trivial, barebones framework for slackbot rtm client in python.  WIP use at your own risk.  Uses `slackclient` library.  Define actions using decorators, which registers them for a runner that runs the rtm bot.
 
 ### To use:
 
