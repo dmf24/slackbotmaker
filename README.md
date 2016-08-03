@@ -17,12 +17,27 @@ It's one python file, `slackbotmaker.py` the rest are examples.
 
 To define actions, import the action function from slackbotmaker:
 
-```
+```Python
 from slackbotmaker import action
 ```
 
 Use it as a decorator for the action functions.  Action functions take two arguments, which are passed by rtm_runner.  The first argument is the instance of the slack client.  The second argument is a dictionary containing with the contents of the slack event.
 
+This action will reply to any message with a response chosen randomly from a list
+
+```Python
+from slackbotmaker import action
+
+@action
+def obnoxious(slack_client, event):
+    from random import choice
+    if event.get('type', None) != 'message':
+        return None
+    channel=event.get('channel', None)
+    if channel is not None:
+        slack_client.rtm_send_message(channel, choice(["Yes!", "hmm", "oic", "mos def", "oh :("]))
+
+```
 
 ### Running examples:
 
