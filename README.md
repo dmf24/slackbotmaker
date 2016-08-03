@@ -4,7 +4,7 @@ Trivial, barebones framework for slackbot rtm client in python.  WIP use at your
 ### To use:
 
 1.  Obtain a slack API token.  [This Tuturial is Helpful](https://www.fullstackpython.com/blog/build-first-slack-bot-python.html).  There's also the [slack docs on web authentication](https://api.slack.com/web#authentication)
-1.  install the `slackbotmaker` python package (`pip install https://rc.hms.harvard.edu/dmf24/slackbotmaker-0.0.1.tar.gz`)
+1.  install the `slackbotmaker` python package (`pip install https://rc.hms.harvard.edu/dmf24/slackbotmaker-0.0.2.tar.gz`)
 2.  create your bot with a python script that does the following:
   1.  import `rtm_runner` from `slackbotmaker`
   2.  Define your actions or import them.  [See below.](https://github.com/dmf24/slackbotmaker/blob/master/README.md#actions-files)
