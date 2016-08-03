@@ -5,6 +5,7 @@ It's one python file, `slackbotmaker.py` the rest are examples.
 
 ### To use:
 
+1.  Obtain a slack API token.  [This Tuturial is Helpful](https://www.fullstackpython.com/blog/build-first-slack-bot-python.html).  There's also the [slack docs on web authentication](https://api.slack.com/web#authentication)
 1.  install the `slackclient` python package (`pip install slackclient`)
 2.  create your bot with a python script that does the following:
   1.  import `rtm_runner` from `slackbotmaker`
