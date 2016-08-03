@@ -39,10 +39,28 @@ def obnoxious(slack_client, event):
 
 ```
 
-### Running examples:
-
+### Install
 
 ```
+pip install https://rc.hms.harvard.edu/dmf24/slackbotmaker-0.0.1.tar.gz
+```
+
+### Running examples:
+
+Clone the repository:
+
+```
+git clone https://github.com/dmf24/slackbotmaker.git
+cd slackbotmaker
+```
+
+If you have already installed slackbotmaker, skip this step
+```
+python setup.py install
+```
+
+```
+cd examples
 python samplebot.py <your slack API token>
 ```
 
