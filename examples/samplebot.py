@@ -4,6 +4,8 @@ import sample_actions
 import duckduckgo_actions
 import os
 import sys
+import logging
+logging.basicConfig(level=logging.INFO)
 
 if len(sys.argv) > 1:
     token=sys.argv[1]
