@@ -6,10 +6,9 @@ It's one python file, `slackbotmaker.py` the rest are examples.
 ### To use:
 
 1.  install the `slackclient` python package (`pip install slackclient`)
-1.  define bot behavior in python scripts (optional, see "Actions files" below).
 2.  create your bot with a python script that does the following:
   1.  import `rtm_runner` from `slackbotmaker`
-  2.  Define your actions (or import them)
+  2.  Define your actions or import them.  See below.
   3.  load your slack token into memory (sample script shows 3 ways to do it.  If you just copy and paste the string into the script, don't tell anyone you did that)
   4.  finish with a call to rtm_runner that passes your token as the sole argument.
 
