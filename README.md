@@ -12,7 +12,7 @@ It's one python file, `slackbotmaker.py` the rest are examples.
   3.  load your slack token into memory (sample script shows 3 ways to do it.  If you just copy and paste the string into the script, don't tell anyone you did that)
   4.  finish with a call to rtm_runner that passes your token as the sole argument.
 
-### Actions files
+### Actions
 
 To define actions, import the action function from slackbotmaker:
 
