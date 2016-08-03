@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from slackbotmaker import rtm_runner
 import sample_actions
 import duckduckgo_actions
