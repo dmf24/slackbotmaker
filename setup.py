@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='slackbotmaker',
-            version='0.0.2',
+            version='0.0.3',
             description='Trivial framework for building a slackbot rtm client',
             url='http://github.com/dmf24/slackbotmaker',
             author='Doug Feldmann',
