@@ -79,7 +79,7 @@ cd examples
 
 Now you have 3 options, depending on how you store your slack API token.  Either an environment variable, a text file, or passed at the command line.
 ```
-export SLACKBOT_TOKEN=<your slack API token>
+export SLACKBOT_TOKEN="your_slack_API_token"
 python samplebot.py
 ```
 
@@ -89,7 +89,7 @@ python samplebot.py
 ```
 
 ```
-python samplebot.py <your slack API token>
+python samplebot.py "your_slack_API_token"
 ```
 
 This should enable the follwing interactions with the bot:
